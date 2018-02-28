@@ -1,7 +1,3 @@
----
-title: Activity-Space Project
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,14 +12,14 @@ title: Activity-Space Project
     <title>Activity-Space Project</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.url }}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost:4000/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="{{ site.url }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="http://localhost:4000/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="{{ site.url }}/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="http://localhost:4000/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,8 +28,8 @@ title: Activity-Space Project
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="{{ site.url }}/assets/css/carousel.css" rel="stylesheet">
-    <link href="{{ site.url }}/assets/css/this_style.css" rel="stylesheet">
+    <link href="http://localhost:4000/assets/css/carousel.css" rel="stylesheet">
+    <link href="http://localhost:4000/assets/css/this_style.css" rel="stylesheet">
 
 <style>
 .photocredit{
@@ -46,7 +42,37 @@ font-size: smaller;
 
   </head>
 
-{% include navbar.html %}
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Activity-Space Project</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
 
     <!-- Carousel
     ================================================== -->
@@ -59,7 +85,7 @@ font-size: smaller;
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="{{ site.url }}/images/Barcelona_ciudad_lite.jpg" alt="First slide">
+          <img class="first-slide" src="http://localhost:4000/images/Barcelona_ciudad_lite.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption semitransparent-dark">
               <h1>Activity Space</h1>
@@ -70,7 +96,7 @@ font-size: smaller;
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="{{ site.url }}/images/Vista_de_Barcelona_B10_lite.jpg" alt="Second slide">
+          <img class="second-slide" src="http://localhost:4000/images/Vista_de_Barcelona_B10_lite.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption semitransparent-dark">
               <h1>Access</h1>
@@ -81,7 +107,7 @@ font-size: smaller;
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="{{ site.url }}/images/Amanecer_en_Barcelona_2012_lite.jpg" alt="Third slide">
+          <img class="third-slide" src="http://localhost:4000/images/Amanecer_en_Barcelona_2012_lite.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption semitransparent-medium">
               <h1>Exposure</h1>
@@ -126,7 +152,7 @@ font-size: smaller;
         <div class="col-lg-4">
           <h2>Open Data</h2>
           <p>The data we gather will be placed in an open access repository.</p>
-          <p><a class="btn btn-default" href="{{ site.url }}/images/DMP.pdf" role="button">Data Management Plan &raquo;</a></p>
+          <p><a class="btn btn-default" href="http://localhost:4000/images/DMP.pdf" role="button">Data Management Plan &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -141,7 +167,7 @@ font-size: smaller;
           <p class="lead">The Activity-Space Project is aimed at better understanding human mobility at the scale of cities. By studying daily patterns of movement across a city, we can learn about access to resource and exposure to hazards. We can learn about barriers that lead to inequality and opportunities to improve peoples' lives. This project requires participation: We are looking for volunteers to answer a short survey and to track their activity-spaces using an open source mobile phone application that is designed to protect privacy. Members of the research team will be walking all over Barcelona during the spring of 2018 looking for volunteers.
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="{{ site.url }}/images/BuffSimGoogleSatMap_all-closeup.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" data-src="http://localhost:4000/images/BuffSimGoogleSatMap_all-closeup.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -150,19 +176,10 @@ font-size: smaller;
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Contact. <span class="text-muted"></span></h2>
-          <p class="lead">For more information, please contact:</p>
-
-          <address>
-            John Palmer
-Department of Political and Social Sciences
-Pompeu Fabra University
-Ramon Trias Fargas, 25-27
-08005 Barcelona, Spain
-john.palmer [at] upf.edu
-          </address>
+          <p class="lead">For more information, please contact John Palmer</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="{{ site.url }}/images/BuffSim3D_sampleof10.png" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" data-src="http://localhost:4000/images/BuffSim3D_sampleof10.png" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -175,7 +192,7 @@ john.palmer [at] upf.edu
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 John R.B. Palmer &middot; This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 657956 <img src="{{ site.url }}/images/ec-logo-horiz-web_en.png" &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 John R.B. Palmer &middot; This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 657956 <img src="http://localhost:4000/images/ec-logo-horiz-web_en.png" &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -185,11 +202,11 @@ john.palmer [at] upf.edu
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/css//assets/js/jquery.min.js"><\/script>')</script>
-    <script src="{{ site.url }}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/css//assets/js/jquery.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src=".{{ site.url }}/assets/js/holder.min.js"></script>
+    <script src=".http://localhost:4000/assets/js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="{{ site.url }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://localhost:4000/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
